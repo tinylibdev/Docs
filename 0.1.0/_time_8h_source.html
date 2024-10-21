@@ -103,35 +103,33 @@ $(function(){initNavTree('_time_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="_time_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// GetTickCount needs this.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_time_8h.html#ac50762666aa00bd3a4308158510f1748">    4</a></span><span class="preprocessor">#define _WIN32_WINNT 0x0601</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_types_8h.html">Types.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetl.html">tl</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classtl_1_1_time.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classtl_1_1_time.html">Time</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_function" href="classtl_1_1_time.html#a34f8675ccfa9e803c9ce72a837ecfe51">Time</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_function" href="classtl_1_1_time.html#a34f8675ccfa9e803c9ce72a837ecfe51">Time</a>(<a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> timeValue);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="classtl_1_1_time.html#afaed444aa23b96b0c0070e55e9821d9a">~Time</a>();</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_types_8h.html">Types.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_win_a_p_i_8h.html">../Base/Win/WinAPI.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetl.html">tl</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classtl_1_1_time.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classtl_1_1_time.html">Time</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_function" href="classtl_1_1_time.html#a34f8675ccfa9e803c9ce72a837ecfe51">Time</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_function" href="classtl_1_1_time.html#a34f8675ccfa9e803c9ce72a837ecfe51">Time</a>(<a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> timeValue);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_function" href="classtl_1_1_time.html#afaed444aa23b96b0c0070e55e9821d9a">~Time</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> <a class="code hl_function" href="classtl_1_1_time.html#a69a320e7414645c62a9f63d52d907a02">getTime</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtl_1_1_time.html#ac23bdcb12fe6d39a370f2d35c588ef30">update</a>();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> <a class="code hl_function" href="classtl_1_1_time.html#a69a320e7414645c62a9f63d52d907a02">getTime</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classtl_1_1_time.html#ac23bdcb12fe6d39a370f2d35c588ef30">update</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> <a class="code hl_function" href="classtl_1_1_time.html#a4cc3ff829d334cf59c3aacb0ab181c0e">currentTime</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> time;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">static</span> <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> <a class="code hl_function" href="classtl_1_1_time.html#a4cc3ff829d334cf59c3aacb0ab181c0e">currentTime</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_typedef" href="namespacetl.html#a904241d60278f00c7d91b31161237d62">u64</a> time;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 <div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
-<div class="ttc" id="aclasstl_1_1_time_html"><div class="ttname"><a href="classtl_1_1_time.html">tl::Time</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">Time.h:12</a></div></div>
+<div class="ttc" id="a_win_a_p_i_8h_html"><div class="ttname"><a href="_win_a_p_i_8h.html">WinAPI.h</a></div></div>
+<div class="ttc" id="aclasstl_1_1_time_html"><div class="ttname"><a href="classtl_1_1_time.html">tl::Time</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">Time.h:9</a></div></div>
 <div class="ttc" id="aclasstl_1_1_time_html_a34f8675ccfa9e803c9ce72a837ecfe51"><div class="ttname"><a href="classtl_1_1_time.html#a34f8675ccfa9e803c9ce72a837ecfe51">tl::Time::Time</a></div><div class="ttdeci">Time()</div><div class="ttdoc">Time value gets set right away upon creation.</div><div class="ttdef"><b>Definition</b> <a href="_time_8cpp_source.html#l00007">Time.cpp:7</a></div></div>
 <div class="ttc" id="aclasstl_1_1_time_html_a4cc3ff829d334cf59c3aacb0ab181c0e"><div class="ttname"><a href="classtl_1_1_time.html#a4cc3ff829d334cf59c3aacb0ab181c0e">tl::Time::currentTime</a></div><div class="ttdeci">static u64 currentTime()</div><div class="ttdoc">Static way to get a current time value.</div><div class="ttdef"><b>Definition</b> <a href="_time_8cpp_source.html#l00045">Time.cpp:45</a></div></div>
 <div class="ttc" id="aclasstl_1_1_time_html_a69a320e7414645c62a9f63d52d907a02"><div class="ttname"><a href="classtl_1_1_time.html#a69a320e7414645c62a9f63d52d907a02">tl::Time::getTime</a></div><div class="ttdeci">u64 getTime()</div><div class="ttdoc">Get the current time data from this object.</div><div class="ttdef"><b>Definition</b> <a href="_time_8cpp_source.html#l00030">Time.cpp:30</a></div></div>

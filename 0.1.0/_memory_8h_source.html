@@ -104,7 +104,7 @@ $(function(){initNavTree('_memory_8h_source.html',''); initResizable(true); });
 <div class="contents">
 <a href="_memory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Deadly zone of death, beware.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_win_a_p_i_8h.html">../Base/Win/WinAPI.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacetl.html">tl</a> {</div>
@@ -135,6 +135,7 @@ $(function(){initNavTree('_memory_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* ptr, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size) <span class="keyword">noexcept</span>;</div>
 <div class="ttc" id="a_memory_8h_html_a4cf04c7a2389a90415c8032ce5e58e50"><div class="ttname"><a href="_memory_8h.html#a4cf04c7a2389a90415c8032ce5e58e50">_fltused</a></div><div class="ttdeci">int _fltused</div><div class="ttdef"><b>Definition</b> <a href="#l00017">Memory.h:17</a></div></div>
 <div class="ttc" id="a_memory_8h_html_a60ed7fe786cba3286c6ba182199163fa"><div class="ttname"><a href="_memory_8h.html#a60ed7fe786cba3286c6ba182199163fa">memset</a></div><div class="ttdeci">void *__cdecl memset(void *, int, size_t)</div><div class="ttdef"><b>Definition</b> <a href="_memory_8cpp_source.html#l00022">Memory.cpp:22</a></div></div>
+<div class="ttc" id="a_win_a_p_i_8h_html"><div class="ttname"><a href="_win_a_p_i_8h.html">WinAPI.h</a></div></div>
 <div class="ttc" id="anamespacetl_html"><div class="ttname"><a href="namespacetl.html">tl</a></div><div class="ttdef"><b>Definition</b> <a href="_memory_8cpp_source.html#l00003">Memory.cpp:3</a></div></div>
 <div class="ttc" id="anamespacetl_html_a27f87676958c34ab5d023c25d954a58a"><div class="ttname"><a href="namespacetl.html#a27f87676958c34ab5d023c25d954a58a">tl::free</a></div><div class="ttdeci">void free(void *ptr)</div><div class="ttdef"><b>Definition</b> <a href="_memory_8cpp_source.html#l00011">Memory.cpp:11</a></div></div>
 <div class="ttc" id="anamespacetl_html_a2ac98dd95bdf0b59af459a290354c589"><div class="ttname"><a href="namespacetl.html#a2ac98dd95bdf0b59af459a290354c589">tl::malloc</a></div><div class="ttdeci">void * malloc(size_t size)</div><div class="ttdef"><b>Definition</b> <a href="_memory_8cpp_source.html#l00005">Memory.cpp:5</a></div></div>
