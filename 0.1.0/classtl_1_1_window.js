@@ -1,6 +1,5 @@
 var classtl_1_1_window =
 [
-    [ "Window", "classtl_1_1_window.html#a7f27e874d88aa9facef754dcf43b1940", null ],
     [ "Window", "classtl_1_1_window.html#af7f03b9993b5f71524d989d41c3b429a", null ],
     [ "~Window", "classtl_1_1_window.html#a3b64b0fe1dea00402c96b692d0014064", null ],
     [ "checkEvent", "classtl_1_1_window.html#a7f8a9802a81f62d796bae1d0b91ab885", null ],
